@@ -1,0 +1,24 @@
+Algoritmo SumarYPromediar
+    // Algoritmo  que ingresa 10 números naturales entre 1 y 12.Se presenta la suma y el promedio de los 10 datos válidos.
+    Definir num, suma, promedio Como Real
+    Definir i Como Entero
+    suma <- 0
+    
+    Para i <- 1 Hasta 10 Con Paso 1 Hacer
+        Repetir
+            Escribir "Ingrese el número ", i, " (entre 1 y 12): "
+            Leer num
+            Si num < 1 O num > 12 Entonces
+                Escribir "Error: el número debe estar entre 1 y 12. Intente nuevamente."
+            FinSi
+        Hasta Que num >= 1 Y num <= 12
+        // Solo se suma cuando el número ya es válido
+        suma <- suma + num
+    FinPara 
+    
+    promedio <- suma / 10
+    Escribir "La suma es: ", suma
+    Escribir "El promedio es: ", promedio
+FinAlgoritmo
+
+
