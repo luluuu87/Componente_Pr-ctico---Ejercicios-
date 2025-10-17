@@ -1,0 +1,39 @@
+Algoritmo CalcularAreas
+	// Algoritmo que calcula area de figuras geometricas
+    Definir opcion, lado, base, altura, radio, area Como Real
+    Escribir "Seleccione una opción:"
+    Escribir "1. Área del cuadrado"
+    Escribir "2. Área del rectángulo"
+    Escribir "3. Área del triángulo equilátero"
+    Escribir "4. Área del círculo"
+    Leer opcion
+    Segun opcion Hacer
+        1:
+            Escribir "Ingresa el lado del cuadrado: "
+            Leer lado
+            area <- lado * lado
+            Escribir "El área del cuadrado es: ", area
+        2:
+            Escribir "Ingresa la base del rectángulo: "
+            Leer base
+            Escribir "Ingresa la altura del rectángulo: "
+            Leer altura
+            area <- base * altura
+            Escribir "El área del rectángulo es: ", area
+        3:
+            Escribir "Ingresa el lado del triángulo equilátero: "
+            Leer lado
+            area <- (Raiz(3) / 4) * (lado * lado)  // Aquí se usa Raiz() en vez de Sqrt()
+            Escribir "El área del triángulo equilátero es: ", area
+        4:
+            Escribir "Ingresa el radio del círculo: "
+            Leer radio
+            area <- PI * radio * radio
+            Escribir "El área del círculo es: ", area
+        De Otro Modo:
+            Escribir "Opción inválida"
+    FinSegun
+FinAlgoritmo
+
+
+
