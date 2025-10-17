@@ -1,0 +1,22 @@
+Algoritmo SumarNumeros
+    // Ingresar dos números y sumarlos. Si son negativos, se cambia su signo antes de sumar.
+    Definir num1, num2, suma Como Real
+    Escribir "Ingresa el primer número (puede ser negativo): "
+    Leer num1
+    Escribir "Ingresa el segundo número (puede ser negativo): "
+    Leer num2
+    // Convertir negativos a positivos
+    Si num1 < 0 Entonces
+        num1 <- Abs(num1)
+    FinSi
+	
+    Si num2 < 0 Entonces
+        num2 <- Abs(num2)
+    FinSi
+    suma <- num1 + num2
+    Escribir "La suma (considerando cambio de signo) es: ", suma
+FinAlgoritmo
+
+
+
+
