@@ -1,0 +1,20 @@
+Algoritmo TipoDeSocio
+	//Algoritmo que da la categoría de un socio del club deportivo Sol Naciente
+Definir categoria Como Cadena
+Definir antiguedad Como Entero
+
+Escribir "Ingresa la categoría del socio (A, B o C): "
+Leer categoria
+Escribir "Ingresa la antigüedad del socio en años: "
+Leer antiguedad
+
+Si categoria = "A" O antiguedad > 20 Entonces
+	Escribir "Socio VIP"
+Sino
+	Si categoria = "B" O (antiguedad >= 10 Y antiguedad <= 20) Entonces
+		Escribir "Socio estándar"
+	Sino
+		Escribir "Socio amateur"
+	FinSi
+FinSi
+FinAlgoritmo
