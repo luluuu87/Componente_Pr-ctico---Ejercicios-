@@ -1,0 +1,87 @@
+Algoritmo calculo_impuesto_empleado
+		Definir sueldo_bruto, impuesto, sueldo_neto, exceso Como Real
+		
+		Escribir "Ingrese su remuneración anual bruta (USD): "
+		Leer sueldo_bruto
+		
+		Si sueldo_bruto >= 0 Y sueldo_bruto <= 12080 Entonces
+			impuesto <- 0
+			sueldo_neto <- sueldo_bruto - impuesto
+			
+			Escribir "Impuesto: $", impuesto
+			Escribir "Sueldo neto: $", sueldo_neto
+			
+		Sino Si sueldo_bruto > 12080  y    sueldo_bruto <= 15386    Entonces
+				exceso <- sueldo_bruto - 12080 
+				impuesto <- exceso * 0.05
+				sueldo_neto <- sueldo_bruto - impuesto
+				Escribir "Aplica 5% de impuesto"
+				Escribir "Exceso: $", exceso
+				Escribir "Impuesto: $", impuesto
+				Escribir "Sueldo neto: $", sueldo_neto
+			Sino Si sueldo_bruto > 15386 Y sueldo_bruto <= 19977 Entonces
+					exceso <- sueldo_bruto - 15386
+					impuesto= exceso * 0.10
+					sueldo_neto <- sueldo_bruto - impuesto
+					Escribir "Aplica 10% de impuesto"
+					Escribir "Impuesto: $", impuesto
+					Escribir "Sueldo neto: $", sueldo_neto
+					
+				Sino Si sueldo_bruto > 19977 Y sueldo_bruto <= 26421 Entonces
+						exceso <- sueldo_bruto - 19977
+						impuesto <- exceso * 0.12
+						Escribir "Aplica 12% de impuesto"
+						Escribir "Impuesto: $", impuesto
+						Escribir "Sueldo neto: $", sueldo_neto
+						
+						
+					Sino Si sueldo_bruto > 26421 Y sueldo_bruto <= 34769 Entonces
+							exceso <- sueldo_bruto - 26421
+							impuesto <- exceso * 0.15
+							Escribir "Aplica 15% de impuesto"
+							Escribir "Impuesto: $", impuesto
+							Escribir "Sueldo neto: $", sueldo_neto
+							
+						Sino Si sueldo_bruto > 34769 Y sueldo_bruto <= 46088 Entonces
+								exceso <- sueldo_bruto - 34769
+								impuesto <- exceso * 0.20
+								Escribir "Aplica 20% de impuesto"
+								Escribir "Impuesto: $", impuesto
+								Escribir "Sueldo neto: $", sueldo_neto
+								
+							Sino Si sueldo_bruto > 46088 Y sueldo_bruto <= 61358 Entonces
+									exceso <- sueldo_bruto - 46088
+									impuesto <- exceso * 0.25
+									Escribir "Aplica 25% de impuesto"
+									Escribir "Impuesto: $", impuesto
+									Escribir "Sueldo neto: $", sueldo_neto
+								Sino Si sueldo_bruto > 61358 Y sueldo_bruto <= 81816 Entonces
+										exceso <- sueldo_bruto - 61358
+										impuesto <- exceso * 0.30
+										Escribir "Aplica 30% de impuesto"
+										Escribir "Impuesto: $", impuesto
+										Escribir "Sueldo neto: $", sueldo_neto
+									Sino Si sueldo_bruto > 81816 Y sueldo_bruto <= 108809 Entonces
+											exceso <- sueldo_bruto - 81816
+											impuesto <- exceso * 0.35
+											Escribir "Aplica 35% de impuesto"
+											Escribir "Impuesto: $", impuesto
+											Escribir "Sueldo neto: $", sueldo_neto
+										si sueldo_bruto > 108809
+											exceso <- sueldo_bruto - 108809
+											impuesto <- exceso * 0.37
+											Escribir "Aplica 37% de impuesto"
+											Escribir "Impuesto: $", impuesto
+											Escribir "Sueldo neto: $", sueldo_neto
+										FinSi
+									FinSi
+								FinSi
+							FinSi
+						FinSi
+						finsi
+				FinSi
+			finsi 
+			finsi
+				
+finsi
+FinAlgoritmo
