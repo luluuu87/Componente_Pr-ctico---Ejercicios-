@@ -1,0 +1,33 @@
+Algoritmo palabra_dicotomica
+		Definir frase, invertida, letra, frase_sin_espacios Como Cadena
+		Definir i Como Entero
+		
+		Escribir "Ingrese una palabra o frase: "
+		Leer frase
+		frase <- Minusculas(frase)
+		frase_sin_espacios <- ""
+		contador <- 0
+		Mientras contador < Longitud(frase) Hacer
+			contador <- contador + 1
+			letra <- SubCadena(frase, contador, contador)
+			Si letra <> " " Entonces
+				frase_sin_espacios <- frase_sin_espacios + letra
+			FinSi
+		FinMientras
+		invertida <- ""
+		contador <- Longitud(frase_sin_espacios)
+		
+		Mientras contador > 0 Hacer
+			letra <- SubCadena(frase_sin_espacios, contador, contador)
+			invertida <- invertida + letra
+			contador <- contador - 1
+		FinMientras
+		
+		Si frase_sin_espacios = invertida Entonces
+			Escribir "La palabra o frase ES DICOTÓMICA (palíndroma)."
+		Sino
+			Escribir "La palabra o frase NO es dicotómica."
+		FinSi
+		
+
+FinAlgoritmo
