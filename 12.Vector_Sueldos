@@ -1,0 +1,23 @@
+Algoritmo  Vector_Sueldos
+	//Algoritmo que en el cual el usuario crea un vector de n elementos o empleados a gusto del usuario
+    Definir sueldos, suma, promedio, varianza, desviacion Como Real
+    Dimension sueldos[100]
+    Escribir "Ingrese la cantidad de empleados: "
+    Leer n
+    suma <- 0
+    Para i <- 1 Hasta n Con Paso 1
+        Escribir "Ingrese el sueldo del empleado ", i, ": "
+        Leer sueldos[i]
+        suma <- suma + sueldos[i]
+    FinPara
+    promedio <- suma / n
+    varianza <- 0
+    Para i <- 1 Hasta n Con Paso 1
+        varianza <- varianza + (sueldos[i] - promedio)^2
+    FinPara
+    varianza <- varianza / n
+    desviacion <- RAIZ(varianza)
+    Escribir "Promedio: ", promedio
+    Escribir "Varianza: ", varianza
+    Escribir "Desviación estándar: ", desviacion
+FinAlgoritmo
